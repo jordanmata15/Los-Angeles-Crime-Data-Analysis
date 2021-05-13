@@ -354,7 +354,7 @@ def violin_plot(df, year, title, sex_descent):
     figure_size = scale*FIGSIZE
 
     # plot the violin
-    plt.figure(figsize=figure_size)
+    plt.figure(figsize=figure_size+[0, 5])
     sns.violinplot(data=df,
                    y=sex_descent,
                    x='Vict Age',
