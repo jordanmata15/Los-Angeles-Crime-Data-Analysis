@@ -1,7 +1,6 @@
 import folium
 from folium import plugins
-from IPython.display import clear_output
-import ipywidgets as widgets
+from IPython.display import clear_output, display
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -355,12 +354,15 @@ def violin_plot(df, year, title, sex_descent):
 
     # plot the violin
     plt.figure(figsize=figure_size+[0, 5])
-    sns.violinplot(data=df,
-                   y=sex_descent,
-                   x='Vict Age',
-                   scale='width',
-                   orient='h',
-                   cut=0)
+    ax = sns.violinplot(data=df,
+                        y=sex_descent,
+                        x='Vict Age',
+                        scale='width',
+                        orient='h',
+                        cut=0)
+    ax.tick_params(  # left=True,
+        # bottom=True,
+        top=True, labeltop=True)
     plt.title(label='Age and ' + sex_descent + ' distribution for '+title)
     plt.xticks(rotation=90)
     plt.tight_layout()
