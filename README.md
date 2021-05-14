@@ -1,3 +1,5 @@
+# Contributors: Jordan Mata, Jawwad Sabir
+
 # GENERAL INFO
 The project requires a few non standard libraries. The following are required:
 + folium
@@ -5,7 +7,11 @@ The project requires a few non standard libraries. The following are required:
 + missingno
 <br><br>
 
-# Columns
+Please note, the functions with widgets are doing some taxing calculations, please give them time to update with each change of variable.
+<br><br>
+
+
+# Columns (of the main crime dataset)
 
 + **DR_NO**<br>
 Division of Records Number: Official file number made up of a 2 digit year, area ID, and 5 digits
