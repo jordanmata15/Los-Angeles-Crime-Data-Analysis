@@ -670,7 +670,10 @@ def plot_monthly_crime(df, crime_category):
         crime = df[(df["Crime Category"] == crime_category)]
 
     mon_occurred = [d.month for d in crime["DATE OCC"]]
+    
+    pd.options.mode.chained_assignment = None
     crime["Month Occurred"] = np.array(mon_occurred)
+    pd.options.mode.chained_assignment = 'warn'
 
     fig, ax = plt.subplots(figsize=(10, 6))
 
