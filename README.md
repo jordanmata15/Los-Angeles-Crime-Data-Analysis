@@ -1,5 +1,12 @@
 # Contributors: Jordan Mata, Jawwad Sabir
 
+# Disclaimer
+Github doesn't play well with widgets. The widgets are missing ENTIRELY in the Github preview. There's actually more to be seen if run locally. A widget is missing anytime you see something like the following in the preview:
+```
+interactive(children=(SelectMultiple(description…
+Output()
+```
+
 # GENERAL INFO
 The project requires a few non standard libraries. The following are required:
 + folium
@@ -9,7 +16,6 @@ The project requires a few non standard libraries. The following are required:
 
 Please note, the functions with widgets are doing some taxing calculations, please give them time to update with each change of variable.
 <br><br>
-
 
 # Columns (of the main crime dataset)
 
