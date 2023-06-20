@@ -386,7 +386,6 @@ def call_category_plot(categories, grouping, plot_type, crime_data, crime_dict, 
     @param latest_date - datetime of the latest date of our crime_data dataframe
     """
     crime_list = categories
-    output1.clear_output()
     # don't try and plot if no categories selected
     if not crime_list:
         return None
@@ -395,8 +394,8 @@ def call_category_plot(categories, grouping, plot_type, crime_data, crime_dict, 
     # create a dataframe with the selected crimes only
     subset_df = crime_data.iloc[0:0, :].copy()
     for i in crime_list:
-        subset_df = subset_df.append(
-            get_crime_subset(crime_data, i, dict_subset))
+        subset_df = pd.concat(
+            [subset_df, get_crime_subset(crime_data, i, dict_subset)])
     # draw and output the dataframe subset
     with output1:
         print('Crunching data. Please be patient.')
