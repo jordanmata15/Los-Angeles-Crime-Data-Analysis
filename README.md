@@ -145,6 +145,6 @@ Longtitude coordinate
 [Sheriff Stations Dataset Page](https://geohub.lacity.org/datasets/lacounty::sheriff-and-police-stations/data?geometry=-160.268%2C22.722%2C-59.018%2C47.492)
 
 ### [Census data has been deprecated as this data source is no longer available]
-## 2016 Census data by age group and ethnicity (general areas).
-The census data is from 2016 as it's the most recent census data we could find that also includes population by general area.<br>
-[2016 Census Data CSV](https://data.lacounty.gov/resource/ai64-dnh8.csv)
+#### ~2016 Census data by age group and ethnicity (general areas).~
+~The census data is from 2016 as it's the most recent census data we could find that also includes population by general area.~<br>
+~[2016 Census Data CSV](https://data.lacounty.gov/resource/ai64-dnh8.csv)~
